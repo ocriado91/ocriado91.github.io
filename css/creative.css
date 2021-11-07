@@ -1375,6 +1375,7 @@ pre code {
   background: #233b23;
   color: #fff;
   padding: 20px; 
+  margin-top: 5px;
   text-size-adjust: auto;
   display: inline-block;
 }
