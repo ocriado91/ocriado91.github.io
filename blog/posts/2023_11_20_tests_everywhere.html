@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>ocriado91</title>
+
+  <!-- Font Awesome Icons -->
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link href="../../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="../../css/creative.min.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../img/favicon/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+	<div class="container">
+	  <a class="navbar-brand js-scroll-trigger" href="../../index.html">Oscar Criado de la Torre</a>
+	  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto my-2 my-lg-0z">
+		  <li class="nav-item">
+			<a class="nav-link js-scroll-trigger" href="../../index.html">Main</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link js-scroll-trigger" href="../../pages/experience.html#experience">Experience</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link js-scroll-trigger" href="../../pages/experience.html#academic">Academic</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link js-scroll-trigger" href="../index.html">Blog</a>
+		  </li>
+		</ul>
+	  </div>
+	</div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead" id="main">
+	<div class="container h-100">
+	  <div class="row h-100 align-items-center justify-content-center text-center">
+		<h1 class="text-white font-weight-bold">Oscar Criado de la Torre</h1>
+	  </div>
+	</div>
+  </header>
+
+  <!-- Main -->
+  <div class="main">
+	<div style="text-align: center;">
+		<img src="../images/1000048270.jpg" alt="https://mailtrap.io/blog/qa-testing-memes/"/>
+		<p>Source: <a target="_blank" href="https://mailtrap.io/blog/qa-testing-memes/">https://mailtrap.io/blog/qa-testing-memes/</a></p>
+	</div>
+
+	<h2>Why Software Testing?</h2>
+	In the fast-paced world of software development, the significance of rigorous testing cannot be overstated, as a single error in 
+	a bit can result in the failure of an entire software module. Until the 1980s, debugging was the primary testing method. 
+	However, in subsequent decades, the emphasis shifted towards testing software in real-world settings, 
+	integrating this stage with a comprehensive quality assurance process within the development life cycle.<br><br>
+
+	The defects injection into a software module is well illustrated into the graph from Capers Jones' book, <i>Applied Software Measurement: Global Analysis of Productivity and Quality</i>:
+	<div style="text-align:center;">
+	<img src="../images/shift-left.png" alt="Shif-left-justification">
+	<p>Source : <a target="_blank" href="https://www.stickyminds.com/article/shift-left-approach-software-testing">https://www.stickyminds.com/article/shift-left-approach-software-testing</a></p>
+	</div>
+
+	In the Coding phase, most bugs (represented by the blue line) arise from human errors, misunderstandings of requirements, 
+	and oversights in various function branches. Following this phase in a typical development cycle, testing begins with Unit Tests. 
+	These critical tests ensure the accuracy of our code's functions and methods, uncovering defects (shown by the orange line) tied 
+	to their execution.
+	<br><br>
+	Upon resolving these bugs, our focus shifts to integrating the software, 
+	initiating the functional testing phase. Here, we encounter new bugs due to interface inconsistencies 
+	and data type mismatches within methods, adding to the total count of defects identified since the start of our code.
+	<br><br>
+	Once these bugs are addressed, our system is prepared for deployment in the real world. During this phase, 
+	we uncover additional issues like network problems, disparities in package versions between environments, 
+	and unanticipated scenarios. Each factor contributes to the rising count of defects in our software system, 
+	affecting costs significantly as the complexity of identifying their root causes grows with delayed discovery.
+
+	<h2> Shift-left tendency and TDD</h2>
+	Based on Capers Jones' book, discovering a defect during the release stage 
+	can skyrocket the cost of fixing it by a whopping factor of 640x. 
+	This staggering reality stems from the intricate process required to 
+	rectify such a bug. It involves pinpointing when this bug triggers a
+	complete failure in our software, comprehending the status of all our 
+	application's components and dependencies, and unraveling the root cause.
+	Let's not overlook how this bug affects user experience—it's a colossal
+	catastrophe!
+
+	<div style="text-align: center;">
+		<img src="../images/shift-left-final.png">
+		<p> Shift-Left defects finding. Source: <a href="https://www.stickyminds.com/article/shift-left-approach-software-testing">https://www.stickyminds.com/article/shift-left-approach-software-testing</a></p>
+	</div>
+	<br><br>
+	For this reason, we would like to detect and fix all defects ASAP,
+	moving the percentage of defects found (marked in orange) into our 
+	software application to the left to reduce the costs associated with the discovery
+	of these defects. This strategy is followed by multiple organizations to avoid the
+	expense costs (and reputation) of finding a defect in the release stage by implementing the
+	technique called TDD, <i>Test Driven Development</i>. This technique emphasizes writing tests before writing the actual code in this manner,
+	the developer gains a clear understanding of what needs to be implemented and how it should behave following
+	<i>Red-Green-Refactor</i> stages:
+	<ol>
+		<li>In the <i>Red</i> stage, the developer writes a failing test case that highlights the desired behavior not yet implemented</li>
+		<li>In the <i>Green</i> phase, the developer writes the minimum amount of code necessary to pass the test defined in the previous stage</li>
+		<li>In the <i>Refactor</i> stage, the developer improves the code without changing its behavior</li>
+	</ol>
+<!-- 	
+	where in the initial phase, the developer writes a failing test case that highlights
+	the desired behavior not yet implemented, writing the minimum  amount of code necessary to pass the test in the second phase,
+	improving it without changing its behavior in the last phase. -->
+
+	<h2>Unit Testing, Integration Testing, Functional Testing and E2E Testing</h2>
+	As we've touched on earlier, during the early-stage into development-cycle, we have to develop
+	a set of test to avoid all possible defects reaching the release stage but not all the tests have
+	the same scope according with <i>Test Pyrdamid</i> from Martin Fowler:
+	<div style="text-align: center;">
+		<img src="../images/test-pyramid.png">
+		<p>Source: <a target="_blank" href="https://martinfowler.com/bliki/TestPyramid.html">https://martinfowler.com/bliki/TestPyramid.html</a></p>
+	</div>
+	<h3>Unit Testing</h3>
+	As explained above, a <i>Unit Test</i> is an automated test to check an isolate 
+	and small section of our code. Typically these tests are very fast and it is based into an fragment of code that stimulates
+	the production code in some way, and then verifies wheter the result matches what was epected.
+	<h3>Integration Testing</h3>
+	It can be confused with <i>Unit Tests</i> because if a function, we are going to call it "A", depends on another function, called "B"
+	and we have to write a Unit Test for function "A", we depends of the behavior of function "B" breaking the isolation principle of Unit Tests.
+	According with Martin Fowler, in his <a href="https://martinfowler.com/bliki/IntegrationTest.html">blog</a>, a <i>Integration Test</i> is a test
+	that verifies wheter many separated developed modules work together as expected. For this purpose, the different components of our sofrware application
+	must be completed, and harder to write than <i>Unit Tests</i>. Also, these tests usually required a strict order and can't be run at the same time, being
+	these points the main differences between <i>Unit Tests</i> and <i>Integration Tests</i>
+	<h3>E2E Testing</h3>
+	This type of testing is a technique that verifies from start to finish the functionality and performance of an
+	entire software application by simulation real-world user scenarios and replicating live data.
+
+
+	<h2>Example of Unit Testing in Python</h2>
+	<!-- Google Colab Unit testing with pytest-->
+	In this link <a href="https://colab.research.google.com/drive/1RkjdFaagigdpST_kPgZPbivIrLwTLP9y?usp=sharing">Colab</a>, I've made a simple example of Unit Tests using <i>pytest</i>, 
+	a Python testing framework, to show you and expands the concepts behind this post.
+	<br><br>
+
+	I hope you enjoyed it! &#x1F44B;
+  </div>
+  
+
+
+
+  <!-- Footer -->
+  <footer class="bg-light py-5">
+	<div class="container text-center">
+	  <!-- GitHub -->
+	  <a href="https://github.com/ocriado91">
+		<i class="fab fa-3x fa-github mb-4"></i>
+	  </a>
+	  <!-- Instagram -->
+	  <a target="_blank" href="https://www.instagram.com/ocriado91_/">
+		<i class="fab fa-3x fa-instagram mb-4"></i>
+	  </a>
+	  <!-- Twitter -->
+	  <a target="_blank" href="https://twitter.com/ocriado91">
+		<i class="fab fa-3x fa-twitter mb-4"></i>
+	  </a>
+	  <!-- Linkedin -->
+	  <a target="_blank" href="https://www.linkedin.com/in/ocriado91">
+		<i class="fab fa-3x fa-linkedin-in mb-4"></i>
+	  </a>
+	  <!-- Mail -->
+	  <a href="mailto:ocriado91@gmail.com?">
+		<i class="far fa-3x fa-envelope mb-4"></i>
+	  </a>
+	  <div class="small text-center text-muted">MIT License Theme. Based on <a href="https://startbootstrap.com/themes/creative/">Creative Bootstrap</a></div>
+	</div>
+  </footer>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Custom scripts for this template -->
+	<script src="../../js/creative.min.js"></script>
+
+</body>
+
+</html>

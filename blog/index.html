@@ -3,6 +3,16 @@
 
 <head>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165270142-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-165270142-1');
+  </script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -38,7 +48,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto my-2 my-lg-0z">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="../index.html">Main</a>
           </li>
@@ -46,10 +56,13 @@
             <a class="nav-link js-scroll-trigger" href="../pages/experience.html#experience">Experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="../pages/experience.html#academic">Academic</a>
+            <a class="nav-link js-scroll-trigger" href="../index.html#academic">Academic</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Blog</a>
+            <a class="nav-link js-scroll-trigger" href="../index.html#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#posts">Blog</a>
           </li>
         </ul>
       </div>
@@ -57,7 +70,7 @@
   </nav>
 
   <!-- Masthead -->
-  <header class="masthead">
+  <header class="masthead" id="main">
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center text-center">
         <h1 class="text-white font-weight-bold">Oscar Criado de la Torre</h1>
@@ -65,21 +78,36 @@
     </div>
   </header>
 
-  <!--Blog posts-->
-  <section id="portfolio">
-    <div class="container-fluid p-0">
-      <div class="row no-gutters">
-        <div class="col-lg-3 col-sm-6">
-          <a class="portfolio-box" href="posts/hello_world.html">
-            <img class="img-fluid" src="../img/portfolio/fullsize/blog.jpg" alt>
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                Hello World
-              </div>
+    <!-- Projects Section -->
+    <section class="page-section" id="posts">
+      <div class="container-fluid p-0">
+        <h2 class="text-center mt-0">Posts</h2>
+        <hr class="divider my-6">
+        <div class="row no-gutters">
+
+          <!-- Software Testing -->
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="mt-5">
+              <a class="portfolio-box" href="https://ocriado91.github.io/blog/posts/2023_11_20_tests_everywhere">
+                <img class="img-responsive"
+                  width="100%"
+                  height="350"
+                  src="images/1000048270.jpg" alt="">
+                <h3 class="h4 mb-4 text-dark">Tests Everywhere</h3>
+              </a>
             </div>
-          </a>
+          </div>
+
+
         </div>
       </div>
+    </section>
+
+  <!-- Resume download -->
+  <section class="page-section bg-secondary text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">Download entire CV</h2>
+      <a class="btn btn-light btn-xl" href="https://github.com/ocriado91/ocriado91.github.io/raw/main/docs/CV_OSCAR_CRIADO.pdf">Download Now!</a>
     </div>
   </section>
 
