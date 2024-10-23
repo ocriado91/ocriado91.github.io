@@ -492,6 +492,12 @@ mark,
   height: auto;
 }
 
+.img-header {
+  padding: 1rem;
+  max-width: 50%;
+  height: auto;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -9287,6 +9293,12 @@ button.bg-dark:focus {
 
 .text-center {
   text-align: center !important;
+}
+
+.text-post {
+  padding: 7.5rem;
+  padding-top: 1rem;
+  padding-bottom: 0.25rem;
 }
 
 @media (min-width: 576px) {
